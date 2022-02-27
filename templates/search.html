@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+
+<div class="input-wrapper">
+  <form action="{% url 'search' %}" method="get"> <!--usually php for searching from database-->
+
+  <button class="btn-search"><i class="fas fa-search"></i></button>
+  <input type="text" class="input-search" placeholder="Search Your Deals..." name="search_query">
+    {% csrf_token %}
+  </form>
+</div>

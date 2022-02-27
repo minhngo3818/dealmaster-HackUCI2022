@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+
+{% load static %}
+{% block content %}
+<center>
+    <div class = "image">
+        <img src="{% static 'pics/laptop_b.png' %}" alt="laptops" width="100" height="100">
+        </a>
+    </div>
+</center>
+
+
+<body>
+    <div class = "center">
+
+        <form action="{% url 'bestdeals' %}" method="POST">
+            {% csrf_token %}
+            {% for brand in laptops %}
+            <input type="submit" value="{{brand}}" name="{{brand}}}" />
+            {% endfor %}
+        </form>
+
+    </div>
+
+</body>
+
+{% endblock content %}

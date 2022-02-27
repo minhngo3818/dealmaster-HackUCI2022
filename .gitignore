@@ -1,0 +1,7 @@
+../../.idea/vcs.xml
+.vscode/*
+backend/dealmaster/.vscode/*
+backend/hackuci2022/*
+backend/venv/*
+__pycache__/
+*.sqlite3

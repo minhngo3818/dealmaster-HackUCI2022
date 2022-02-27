@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+     <div class="post-content">
+        <div class="center image">
+          <h1><img src="{% static 'pics/Dealmaster.png' %}" alt="Title Page!"></h1>
+        </div>
+      </div>
+
+    <body>
+
+        {% include 'search.html' %}
+        <center>
+        <div class = "image">
+              <a href="{% url 'laptops' %}">
+              <img src="{% static 'pics/laptop_b.png' %}" alt="Laptops" width="280" height="280">
+              </a>
+
+              <a href="{% url 'cars' %}">
+              <img src="{% static 'pics/car_b.png' %}" alt="Cars" width="280" height="280">
+              </a>
+
+              <a href="{% url 'books' %}">
+              <img src="{% static 'pics/books_b.png' %}" alt="Books" width="280" height="280"> >
+              </a>
+
+              <a href="{% url 'accessories' %}">
+              <img src="{% static 'pics/school_b.png' %}" alt="accessories" width="280" height="280">>
+              </a>
+
+
+        </div>
+        </center>
+    </body>
+
+{% endblock content%}

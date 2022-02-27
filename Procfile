@@ -1,0 +1,1 @@
+web: gunicorn dealmaster.wsgi --log-file-
