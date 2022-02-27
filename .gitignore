@@ -5,3 +5,4 @@ backend/hackuci2022/*
 backend/venv/*
 __pycache__/
 *.sqlite3
+venv/*
